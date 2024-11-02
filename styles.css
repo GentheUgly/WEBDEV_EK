@@ -1,84 +1,92 @@
-/* Grundlegendes Layout */
+/* Hintergrund und Grundlayout */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b2f; /* Dunkler Hintergrund */
+    color: #c8c8d3;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Container-Stile */
+/* Container für Inhalt */
 .container {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #252539;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.2);
+    border: 2px solid #ff00ff; /* Neon-Pink-Umrandung */
 }
 
 /* Header und Navigation */
 header {
-    background-color: #007bff;
-    padding: 15px;
+    background-color: #0f0f1f;
+    padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #ff00ff;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
 }
 
 header nav a {
-    color: white;
+    color: #00ffff; /* Neon-Cyan für Links */
     text-decoration: none;
     font-weight: bold;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
 }
 
 header nav a:hover {
-    color: #dbe5ff;
+    color: #ff00ff; /* Neon-Pink beim Hover */
+    transform: scale(1.1); /* Vergrößerung beim Hover */
 }
 
 /* Überschriften */
 h1 {
-    font-size: 1.8em;
-    color: #00ff6e;
+    font-size: 2.5em;
+    color: #00ffff; /* Neon-Cyan */
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+/* Textabsätze */
+p {
+    font-size: 1.1em;
+    color: #c8c8d3;
+    margin-bottom: 15px;
 }
 
 /* Formularstile */
 form label {
     font-weight: bold;
+    color: #ff00ff;
+    font-size: 1.1em;
     margin-top: 15px;
     display: block;
-    color: #555;
 }
 
-form input {
+form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #00ffff;
     border-radius: 5px;
+    background-color: #1f1f30;
+    color: #c8c8d3;
     font-size: 1em;
 }
 
-form input:focus {
-    border-color: #007bff;
+form input:focus, form textarea:focus {
+    border-color: #ff00ff;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
+/* Button-Stile */
 form button {
-    background-color: #007bff;
-    color: white;
+    background-color: #00ffff;
+    color: #1b1b2f;
     border: none;
-    padding: 12px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
+    padding: 12px 

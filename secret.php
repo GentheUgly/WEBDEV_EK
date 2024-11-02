@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    header("Location: index.php");
+    header("Location: index.html");
     exit();
 }
 ?>
@@ -17,7 +17,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <body>
     <header>
         <nav>
-            <a href="index.php">Start Seite</a> |
+            <a href="index.html">Startseite</a> |
             <a href="about.html">Über mich</a> |
             <a href="calc.html">Calc</a> |
             <a href="logout.php">Logout</a>

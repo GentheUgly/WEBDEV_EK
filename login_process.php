@@ -8,16 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $inputUsername = $_POST['username'];
     $inputPassword = $_POST['password'];
 
-    if ($inputUsername == $username && $inputPassword == $password) {
-        // Erfolgreiche Anmeldung: Session setzen
+    if ($inputUsername === $username && $inputPassword === $password) {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $inputUsername;
-        header("Location: index.php"); // Zurück zur Startseite
+        header("Location: secret.php");
         exit();
     } else {
-        // Fehlgeschlagene Anmeldung: Fehlermeldung zurück zur Startseite
         $error = "Ungültiger Benutzername oder Passwort.";
-        header("Location: index.php?error=" . urlencode($error));
+        header("Location: login.php?error=" . urlencode($error));
         exit();
     }
 }
