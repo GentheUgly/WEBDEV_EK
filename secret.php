@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -17,9 +17,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <body>
     <header>
         <nav>
-            <a href="index.html">Start Seite</a> |
+            <a href="index.php">Start Seite</a> |
             <a href="about.html">Über mich</a> |
-            <a href="login.php">Login</a> |
             <a href="calc.html">Calc</a> |
             <a href="logout.php">Logout</a>
         </nav>
@@ -27,8 +26,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
     <div class="container">
         <h1>Geheime Informationen</h1>
-        <p>Vollständiger Name: [Ihr Name]</p>
-        <p>Adresse: [Ihre Adresse]</p>
+        <p>Willkommen auf der geheimen Seite, nur für eingeloggte Benutzer!</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
