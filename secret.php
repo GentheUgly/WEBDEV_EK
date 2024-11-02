@@ -27,7 +27,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="container">
         <h1>Geheime Informationen</h1>
         <p>Willkommen auf der geheimen Seite, nur für eingeloggte Benutzer!</p>
-        <img src="panda_getout.png" alt="Panda mit Schild">
+        <p>Hier geht es zu dem <a href="secretcalculator.html">Geheimen Calculator</a></p>
+        <img src="Genma.gif" alt="Panda">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
