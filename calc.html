@@ -23,18 +23,26 @@
             <input type="number" id="num1" placeholder="Erste Zahl eingeben"><br><br>
             <label>Zahl 2:</label>
             <input type="number" id="num2" placeholder="Zweite Zahl eingeben"><br><br>
-            <button type="submit">Berechnen</button>
+            <button type="submit">Addieren</button>
+            <buttob type="submit">Subtrahieren</buttob>
         </form>
         <p id="result"></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function calculateSum(event) {
+        /* function calculateSum(event) {
             event.preventDefault();
             var num1 = parseFloat(document.getElementById('num1').value);
             var num2 = parseFloat(document.getElementById('num2').value);
             var sum = num1 + num2;
+            document.getElementById('result').innerText = 'Die Summe ist: ' + sum;
+        } */
+        function calculateSum(event) {
+            event.preventDefault();
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var sum = num1 - num2;
             document.getElementById('result').innerText = 'Die Summe ist: ' + sum;
         }
     </script>
