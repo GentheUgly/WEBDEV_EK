@@ -20,9 +20,9 @@
         <h1>Login</h1>
         <form method="POST" action="login_process.php">
             <label>Benutzername:</label>
-            <input type="text" name="username" placeholder="Benutzername" required><br><br>
+            <input type="text" name="username" placeholder="Benutzername"><br><br>
             <label>Passwort:</label>
-            <input type="password" name="password" placeholder="Passwort" required><br><br>
+            <input type="password" name="password" placeholder="Passwort"><br><br>
             <button type="submit">Einloggen</button>
         </form>
         
