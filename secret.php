@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <nav>
             <a href="index.html">Startseite</a> |
             <a href="about.html">Über mich</a> |
-            <a href="calc.html">Calc</a> |
+            <a href="calc.html">Calculator</a> |
             <a href="logout.php">Logout</a>
         </nav>
     </header>
@@ -27,6 +27,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="container">
         <h1>Geheime Informationen</h1>
         <p>Willkommen auf der geheimen Seite, nur für eingeloggte Benutzer!</p>
+        <img src="panda_getout.png" alt="Panda mit Schild">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
