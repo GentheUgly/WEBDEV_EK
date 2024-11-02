@@ -11,39 +11,58 @@
         <nav>
             <a href="index.html">Startseite</a> |
             <a href="about.html">Über mich</a> |
-            <a href="calc.html">Calculator</a> |
+            <a href="calc.html">Calc</a> |
             <a href="login.php">Login</a>
         </nav>
     </header>
 
     <div class="container">
         <h1>Calculator</h1>
-        <form onsubmit="calculateSum(event)">
+        <form>
             <label>Zahl 1:</label>
             <input type="number" id="num1" placeholder="Erste Zahl eingeben"><br><br>
             <label>Zahl 2:</label>
             <input type="number" id="num2" placeholder="Zweite Zahl eingeben"><br><br>
-            <button type="submit">Addieren</button>
-            <buttob type="submit">Subtrahieren</buttob>
+            <button type="button" onclick="calculateSum()">Addition</button>
+            <button type="button" onclick="calculateDifference()">Subtraktion</button>
+            <button type="button" onclick="calculateProduct()">Multiplikation</button>
+            <button type="button" onclick="calculateQuotient()">Division</button>
         </form>
         <p id="result"></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        /* function calculateSum(event) {
-            event.preventDefault();
+        function calculateSum() {
             var num1 = parseFloat(document.getElementById('num1').value);
             var num2 = parseFloat(document.getElementById('num2').value);
             var sum = num1 + num2;
             document.getElementById('result').innerText = 'Die Summe ist: ' + sum;
-        } */
-        function calculateSum(event) {
-            event.preventDefault();
+        }
+
+        function calculateDifference() {
             var num1 = parseFloat(document.getElementById('num1').value);
             var num2 = parseFloat(document.getElementById('num2').value);
-            var sum = num1 - num2;
-            document.getElementById('result').innerText = 'Die Summe ist: ' + sum;
+            var difference = num1 - num2;
+            document.getElementById('result').innerText = 'Die Differenz ist: ' + difference;
+        }
+
+        function calculateProduct() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var product = num1 * num2;
+            document.getElementById('result').innerText = 'Das Produkt ist: ' + product;
+        }
+
+        function calculateQuotient() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            if (num2 === 0) {
+                document.getElementById('result').innerText = 'Division durch Null ist nicht erlaubt.';
+            } else {
+                var quotient = num1 / num2;
+                document.getElementById('result').innerText = 'Der Quotient ist: ' + quotient;
+            }
         }
     </script>
 </body>
