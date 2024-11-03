@@ -26,8 +26,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
     <div class="container">
         <h1>Geheime Informationen</h1>
-        <p>Willkommen auf der geheimen Seite, nur für eingeloggte Benutzer!</p>
-        <p>Hier geht es zu dem <a href="secretcalculator.html">Geheimen Calculator</a></p>
+        <p>Willkommen auf der geheimen Seite!</p>
+        <p>Die admin_login.txt war wohl nicht gut genug versteckt?!</p>
+        <p>Vorgestellt habe ich mich bereits <a href="about.html">hier!</a> 
+        <p>Deswegen geht es hier zu einem anderen <a href="secretcalculator.html">Geheimen Calculator</a></p>
         <img src="Genma.gif" alt="Panda">
     </div>
 
