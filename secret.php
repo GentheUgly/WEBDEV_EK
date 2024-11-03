@@ -17,7 +17,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <body>
     <header>
         <nav>
-            <a href="index.html">Startseite</a> |
+            <a href="index.html">Landing Page</a> |
             <a href="about.html">Über mich</a> |
             <a href="calc.html">Calculator</a> |
             <a href="logout.php">Logout</a>
