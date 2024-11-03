@@ -37,6 +37,28 @@ header nav a {
     font-size: 1.1em;
 }
 
+footer {
+    background-color: #0f0f1f;
+    color: #c8c8d3;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 2px solid #ff00ff;
+    box-shadow: 0 -4px 8px rgba(0, 255, 255, 0.3);
+    margin-top: auto;
+    width: 100%;
+}
+
+footer a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff00ff;
+}
+
 header nav a:hover {
     color: #ff00ff; /* Neon-Pink beim Hover */
     transform: scale(1.1); /* Vergrößerung beim Hover */
