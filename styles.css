@@ -22,7 +22,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.2);
     border: 2px solid #ff00ff;
-    flex: 1; /* Lässt den Container den verfügbaren Platz einnehmen */
+    flex: 1;
 }
 
 header {
